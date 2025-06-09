@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #3a3a3a;
+    background-color: #4d4861;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -20,10 +20,10 @@ header h1 {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding-left: 20px;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 nav ul li {
@@ -42,6 +42,9 @@ img {
 
 .banner {
     background-color: #00a2e8;
+    background-image: url(/W2-S1-BoxModel/2_BorderStyling/exercise/assets/images/wellies.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -49,6 +52,7 @@ img {
 
 .banner h2 {
     margin: 0;
+    height: 100px;
 }
 
 .products {
