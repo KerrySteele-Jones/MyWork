@@ -60,6 +60,18 @@ button:hover {
 /* Pseudo-elements for Email and Phone Labels */
 /* Add ✉️ and 📞 icons before the labels */
 
+.email-label::before {
+  content: "✉️ "; 
+  color: #0077cc;
+  font-size: 1em;
+  margin-right: 6px;
+}
+.phone-label::before {
+  content: "📞"; 
+  color: #0077cc;
+  font-size: 1em;
+  margin-right: 6px;
+}
 
 /* Styling the Terms and Conditions Link */
 .terms-link {

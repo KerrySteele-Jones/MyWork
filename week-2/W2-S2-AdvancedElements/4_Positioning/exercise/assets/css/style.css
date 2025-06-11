@@ -19,6 +19,9 @@ body {
     background-color: #333;
     color: white;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .main-nav ul {
@@ -102,6 +105,9 @@ footer {
 .get-in-touch img {
     width: 150px;
     height: auto;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
 }
 
 /* TASK 1: Make the navigation sticky at the top */
