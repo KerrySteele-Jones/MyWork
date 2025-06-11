@@ -1,6 +1,58 @@
-/* [START] Settings for entire portfolio*/
-* {
-    margin: 0 auto;
+/* site settings*/
+
+*{
+  margin: 0; /* resetting all margins and paddings*/
+  padding: 0;
+}
+
+
+/* Header bar & navigation settings*/
+header {
+  display: flex; /*Note for me to remember, make a section a flex to use this */
+  background-color: #212121;
+  padding: 25px 50px;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout [https://www.w3schools.com/css/css3_flexbox_responsive.asp]  */
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  width: 30%;
+}
+
+/* Responsive image so it shrinks */
+@media (max-width: 768px) {
+  .logo img {
+    max-height: 30px;
+  }
+}
+
+.logo img {
+  height: auto;
+  max-height: 60px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #FBB566;
+  text-decoration: none;
+}
+
+.top-nav {
+  width: 70%;
+  
 }
 
 /* Setting the sase size using rem on html tag: 1rem = 16px [2 x rem is 32px - remember Kerry! */
@@ -24,8 +76,6 @@ h2{
     font-size: 1.75rem;
 }
 
-h3 {
 
-}
 /* [END] of Settings for entire portfolio*/
 

@@ -7,5 +7,8 @@
 
 For this assignment, I tried to replicate what I built in WordPress & Elementor.  It's been fun hand making it! Not had to hand make in a while [years perhaps] 😅
 
+🤓 Step 1: was copying content into plain HTML
+🤓 Step 2: styled the NAV - dabbled with a little flexbox (I learnt HTML & CSS way before this, won't go to far in it for this submission as I know we are learning more on this soon) - I just wanted to try it 😅
+🤓 Step 3:
 
 
