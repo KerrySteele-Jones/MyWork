@@ -20,3 +20,5 @@ For this assignment, I tried to replicate what I built in WordPress & Elementor.
 👩🏽‍💻 Sort out page alignment so content is the middle and aligns with Nav Bar (that needs sorting too)
 
 👩🏽‍💻 Finish styling Links to blogs (will link to original website)
+
+👩🏽‍💻 Finish doing all of the other styling bits
