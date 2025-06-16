@@ -17,7 +17,7 @@ header {
 .navbar {
     /* TODO: explain the purpose of the following properties */
     display: flex;
-
+    /* dispay flex makes a flex container [which you then put items in / or children.  justify-content - defines the alignment along the main axis. two useful links to remind me: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ |
     justify-content: center;
     background-color: #007BFF;
     padding: 10px;
