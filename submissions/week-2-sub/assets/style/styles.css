@@ -1,0 +1,112 @@
+/* styles for Spanish Website */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+     /* Font families */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+     /* Font sizes */
+    --fs-base: 1rem;            /* 16px */
+    --fs-sm: 0.875rem;          /* 14px */
+    --fs-md: 1.125rem;          /* 18px */
+    --fs-lg: 1.5rem;            /* 24px */
+    --fs-xl: 2rem;              /* 32px */
+    --fs-xxl: 2.5rem;           /* 40px */
+
+  /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+     /* Layout widths */
+    --max-width-boxed: ;
+    --
+
+
+  /* Font Weights */
+
+
+
+  /* Website colours */
+    --website-color-primary: #E63946;
+    --website-color-secondary: #F4A261;
+    --website-color-accent: #2A9D8F;
+    --website-color-light-bg: #F1FAEE;
+    --website-color-dark-headings: #1D3557;
+    --dark-body-text-color: #3D3D3D;
+    --light-text-color: #6D6D6D;
+    --color-black:#FFFFFF; 
+    --color-white: #000000;
+
+
+    /*shadows and things */
+    --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+ /* Navigation styles */
+    --nav-height: 64px;
+    --nav-font: var(--font-heading);
+    --nav-text-color: var(--website-color-dark-headings);
+    --nav-hover-color: var(--website-color-accent);
+    --nav-spacing:var(--spacing-md);
+    --nav-sign-up-button: var(--website-color-accent);
+    --nav-button-text: var(--color-black);
+    --nav-botton-hover: var(--website-color-primary);
+    --nav-shadow: var(--shadow-light);
+}
+
+body {
+    background-color: var(--website-color-light-bg);
+    color: var(--dark-body-text-color);
+    font-family: var(--font-body);
+
+}
+
+h1, h2, h3 {
+    color: var(--website-color-dark-headings);
+    font-family: var(--font-heading);
+}
+ 
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.logo {
+    flex: 1;
+
+}
+
+.sign-up {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header-nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+
+}
+
+.header-nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     gap: 15px;
+
+}
