@@ -26,9 +26,10 @@
     --spacing-lg: 2rem;
     --spacing-xl: 4rem;
 
-     /* Layout widths */
-    --max-width-boxed: ;
-    --
+     /* Layout widths for sections */
+    --section-max-width-boxed: 1200px ;
+    --section-padding-row: 1rem ;
+    --section-spacing: 4rem ;
 
 
   /* Font Weights */
@@ -40,7 +41,7 @@
     --website-color-secondary: #F4A261;
     --website-color-accent: #2A9D8F;
     --website-color-light-bg: #F1FAEE;
-    --website-color-dark-headings: #1D3557;
+    --website-color-dark-headings: #103b77;
     --dark-body-text-color: #3D3D3D;
     --light-text-color: #6D6D6D;
     --color-black:#FFFFFF; 
@@ -59,13 +60,19 @@
     --nav-spacing:var(--spacing-md);
     --nav-sign-up-button: var(--website-color-accent);
     --nav-button-text: var(--color-black);
-    --nav-botton-hover: var(--website-color-primary);
+    --nav-botton-hover: var(--website-color-accent);
     --nav-shadow: var(--shadow-light);
+    
+    /* buttons styles */
+    --sup-button-radius: 999px;
+    --sup-button-padding: 0.75rem 2rem;
+    --sup-button-text: var(--font-heading);
 }
+
 
 body {
     background-color: var(--website-color-light-bg);
-    color: var(--dark-body-text-color);
+    color: var(--website-color-light-bg);
     font-family: var(--font-body);
 
 }
@@ -73,6 +80,20 @@ body {
 h1, h2, h3 {
     color: var(--website-color-dark-headings);
     font-family: var(--font-heading);
+}
+
+    /* Header/nav bar settings */
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-body-text-color);
+  padding: 0.5rem 1rem;
+  font-weight: var(--fw-medium);
+  display: inline-block;
+}
+
+nav a:hover {
+    color: var(--nav-botton-hover);
 }
  
 .header-area {
@@ -109,4 +130,39 @@ h1, h2, h3 {
      display: flex;
      gap: 15px;
 
+}
+
+.button-sign-up {
+    background-color: var(--website-color-accent);
+    color: var(--clr-white);
+    border: none;
+    border-radius: var(--sup-button-radius);
+    padding: var(--sup-button-padding);
+    font-family: var(--sup-button-text);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-sign-up:hover {
+  background-color: var(--website-color-primary);  
+}
+/* Section content settings */
+
+.section-full-width {
+    width: 100%;
+    padding: var(--section-spacing) 0;
+}
+
+.section-full-width .inner {
+  max-width: var(--section-max-width-boxed);
+  margin: 0 auto;
+  padding: 0 var(--section-padding-row);
+}
+
+.section-boxed {
+  max-width: var(--section-max-width-boxed);
+  margin: 0 auto;
+  padding: var(--section-spacing) var(--section-padding-row);
+  background-color: var(--clr-white); /* Optional background */
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
 }
