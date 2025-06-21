@@ -22,3 +22,12 @@ For this assignment, I tried to replicate what I built in WordPress & Elementor.
 👩🏽‍💻 Finish styling Links to blogs (will link to original website)
 
 👩🏽‍💻 Finish doing all of the other styling bits
+
+# Week 2 Submission
+📋 Build a Multi-page Responsive Website
+
+For this assignment I created a website that is based on learning spanish.  Later on the course I would like to attempt building an interactive resource that helps me practice Spanish everyday. And a resource that helps dyslexics learn Spanish. 
+
+📋 I have created a seperate read.me file to go with the submission in week-2-sub folder
+
+
