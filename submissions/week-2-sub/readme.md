@@ -4,6 +4,10 @@
 
 Put some things in here about the project
 
+👀 I have tried to work in rems throughout to keep things consitiant.  When I have made things before I switch between Rems and pixels. I'm not sure if this is bad or good, but have kept to rems to get my brain used to working with them! 
+
+
+
 ## 📁 Folder Structure
 
 submissions > 

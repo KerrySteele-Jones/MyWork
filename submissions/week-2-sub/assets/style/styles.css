@@ -11,7 +11,7 @@
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-     /* Font sizes */
+     /* Font sizes and settings */
     --fs-base: 1rem;            /* 16px */
     --fs-sm: 0.875rem;          /* 14px */
     --fs-md: 1.125rem;          /* 18px */
@@ -19,22 +19,22 @@
     --fs-xl: 2rem;              /* 32px */
     --fs-xxl: 2.5rem;           /* 40px */
 
+    --p-spacing:var(--spacing-sm);
+
   /* Spacing */
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 4rem;
+    --spacing-xs: 0.25rem; /* 4px */
+    --spacing-sm: 0.5rem;  /* 8px */
+    --spacing-md: 1rem;    /* 16px */
+    --spacing-lg: 2rem;    /* 32px */
+    --spacing-xl: 4rem;    /* 64px */
+    --spacing-xxl: 6rem;   /* 96px */
+    --spacing-xxxl: 8rem;  /* 128px */
 
-     /* Layout widths for sections */
-    --section-max-width-boxed: 1200px ;
-    --section-padding-row: 1rem ;
-    --section-spacing: 4rem ;
-
-
-  /* Font Weights */
-
-
+     /* Layout widths for sections & other layout settings */
+    --section-max-width-boxed: 1200px;
+    --section-padding-row: 2rem;
+    --section-spacing: 2rem;
+    --section-left-side-padding: 6rem;
 
   /* Website colours */
     --website-color-primary: #E63946;
@@ -44,8 +44,8 @@
     --website-color-dark-headings: #103b77;
     --dark-body-text-color: #3D3D3D;
     --light-text-color: #6D6D6D;
-    --color-black:#FFFFFF; 
-    --color-white: #000000;
+    --color-white:#FFFFFF; 
+    --color-black: #000000;
 
 
     /*shadows and things */
@@ -69,10 +69,10 @@
     --sup-button-text: var(--font-heading);
 }
 
-
+    /* htnl styles */
 body {
     background-color: var(--website-color-light-bg);
-    color: var(--website-color-light-bg);
+    color: var(--dark-body-text-color);
     font-family: var(--font-body);
 
 }
@@ -80,6 +80,11 @@ body {
 h1, h2, h3 {
     color: var(--website-color-dark-headings);
     font-family: var(--font-heading);
+}
+
+p {
+    margin-bottom: var(--p-spacing);
+    margin-top: var(--p-spacing);
 }
 
     /* Header/nav bar settings */
@@ -100,7 +105,11 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: var(--spacing-lg) var(--section-left-side-padding);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--website-color-light-bg);
 }
 
 .logo {
@@ -128,13 +137,13 @@ nav a:hover {
      margin: 0;
      padding: 0;
      display: flex;
-     gap: 15px;
+     gap: var(--spacing-md)
 
 }
 
 .button-sign-up {
     background-color: var(--website-color-accent);
-    color: var(--clr-white);
+    color: var(--color-white);
     border: none;
     border-radius: var(--sup-button-radius);
     padding: var(--sup-button-padding);
@@ -154,15 +163,112 @@ nav a:hover {
 
 .section-full-width .inner {
   max-width: var(--section-max-width-boxed);
-  margin: 0 auto;
-  padding: 0 var(--section-padding-row);
+  margin-left: var(--section-left-side-padding);
+  margin-right: var(--section-padding-row);
 }
 
 .section-boxed {
   max-width: var(--section-max-width-boxed);
   margin: 0 auto;
-  padding: var(--section-spacing) var(--section-padding-row);
-  background-color: var(--clr-white); /* Optional background */
+  padding-left: var(--section-left-side-padding);
+  padding-right: var(--section-left-side-padding);
+  background-color: var(--clr-white); 
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-light);
+}
+
+
+/* Homepage Banner Settings (2 column full width) settings */
+
+.banner-area {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../images/header2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding: 0 var(--section-left-side-padding);
+}
+    
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex: 1;
+  max-width: var(--section-max-width-boxed);
+  margin: 0 auto;
+}
+
+.banner-area {
+  height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: flex-start;
+  background-image: url('../images/header2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding: var(--spacing-xl) var(--section-left-side-padding) var(--spacing-lg);
+}
+
+.banner-left {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  max-width: 37.5rem;
+}
+
+.banner-left h1 {
+    font-size: var(--fs-xxl);
+    color: #E63946;
+    margin-bottom: 1rem;
+}
+
+.banner-left h2 {
+    font-size: var(--fs-lg);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button-sign-up {
+  background-color: var(--website-color-accent);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--sup-button-radius);
+  padding: 0.75rem 1.5rem; 
+  font-family: var(--sup-button-text);
+  font-size: var(--fs-sm); 
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-light);
+  align-self: start;
+}
+
+button-sign-up:hover {
+  background-color: var(--website-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.banner-right {
+    flex: 0 0 38%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.senor-bill {
+  width: auto;
+  max-height: 78vh;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.senor-bill:hover {
+  transform: scale(.95);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.2));
 }
