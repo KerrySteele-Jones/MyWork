@@ -218,18 +218,24 @@ nav a:hover {
   flex-direction: column;
   justify-self: start;
   max-width: 37.5rem;
+  line-height: 1.6;
 }
 
 .banner-left h1 {
     font-size: var(--fs-xxl);
     color: #E63946;
-    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .banner-left h2 {
     font-size: var(--fs-lg);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    line-height: 1.6;
+}
+.banner-left p {
+    font-size: var(--fs-md);
+    line-height: 1.6;
 }
 
 .button-sign-up {
@@ -247,7 +253,7 @@ nav a:hover {
   align-self: start;
 }
 
-button-sign-up:hover {
+.button-sign-up:hover {
   background-color: var(--website-color-primary);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -271,4 +277,77 @@ button-sign-up:hover {
 .senor-bill:hover {
   transform: scale(.95);
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.2));
+}
+
+/* Homepage Content Settings (2 column full width) settings */
+
+.two-column-section {
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    padding: 0 var(--section-left-side-padding);
+}
+
+.two-column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--section-max-width-boxed);
+    margin: 0 auto;
+    width: 100%;
+    gap: var(--spacing-lg);
+}
+
+.content-left {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.senor-image-two {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.content-right {
+  flex: 0 0 50%;
+}
+
+.content-right h2 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--website-color-primary);
+}
+
+.content-right p {
+  font-size: var(--fs-md);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.content-right h2 {
+  font-size: var(--fs-xxl); 
+  margin-bottom: var(--spacing-md);
+}
+
+.content-right p {
+  max-width: 35ch; 
+}
+
+.button-cta {
+  display: inline-block;
+  background-color: var(--website-color-accent);
+  color: var(--color-white);
+  padding: 0.75rem 2rem;
+  border-radius: var(--sup-button-radius);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-cta:hover {
+  background-color: var(--website-color-primary);
 }
