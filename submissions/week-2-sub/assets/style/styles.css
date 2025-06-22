@@ -152,6 +152,7 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .button-sign-up:hover {
   background-color: var(--website-color-primary);  
 }
@@ -309,6 +310,7 @@ nav a:hover {
   transition: all 0.3s ease;
   box-shadow: var(--shadow-light);
   align-self: start;
+  text-decoration: none;
 }
 
 .button-sign-up:hover {
@@ -400,20 +402,7 @@ nav a:hover {
   max-width: 35ch; 
 }
 
-.button-cta {
-  display: inline-block;
-  background-color: var(--website-color-accent);
-  color: var(--color-white);
-  padding: 0.75rem 2rem;
-  border-radius: var(--sup-button-radius);
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
 
-.button-cta:hover {
-  background-color: var(--website-color-primary);
-}
 
 /* Homepage Content Settings for 3 column blog links */
 .blog-section {
@@ -474,5 +463,77 @@ nav a:hover {
   font-size: var(--fs-sm);
   color: var(--light-text-color);
   margin-bottom: var(--spacing-md);
+}
+
+
+/* Pricing page settings 100%vh */
+.header-pricing {
+    height: 100vh;
+    text-align: center;
+    padding: var(--spacing-xxl) var(--section-left-side-padding);
+    
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    max-width: var(--section-max-width-boxed);
+    margin: 0 auto;
+}
+.pricing-header h1 {
+    font-size: var(--fs-xxl);
+    color: #E63946;
+
+}
+
+.pricing-header h2 {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--spacing-xxl);
+}
+.pricing-card {
+  flex: 1 1 calc(33.333% - var(--spacing-lg));
+  background-color: var(--color-white);
+  border: 2px solid var(--website-color-accent);
+  border-radius: 1rem;
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-light);
+}
+
+.pricing-card h3 {
+  font-size: var(--fs-xl);
+  color: var(--website-color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.pricing-card .price {
+  font-size: var(--fs-lg);
+  font-weight: bold;
+  color: var(--website-color-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-md);
+}
+
+.pricing-card ul li {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--fs-lg);
+}
+.pricing-card.featured {
+  transform: scale(1.10);
+  border-color: var(--website-color-primary);
+  background-color: #fffdf9;
+  box-shadow: var(--shadow-medium);
+}
+
+.pricing-card:hover {
+  transform: scale(1.02);
 }
 
