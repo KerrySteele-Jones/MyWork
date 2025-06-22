@@ -1,10 +1,7 @@
 # Read Me File for Week 2 assignment, Build a Multi-page Responsive Website 
 
 ## About Project
-
-Put some things in here about the project
-
-👀 I have tried to work in rems throughout to keep things consitiant.  When I have made things before I switch between Rems and pixels. I'm not sure if this is bad or good, but have kept to rems to get my brain used to working with them! 
+This a website that would help people with dyslexia learn spanish.  This is the first concept, creating a few pages.  Later if I can work on it more, I would like to build something that helps with remember phrases and help with conversations. 
 
 👀 Hero/banner area - button would scroll to the next section, using smooth scrolling - hover over the cat there is a small transition effect. 
 
