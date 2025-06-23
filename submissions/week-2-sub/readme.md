@@ -8,8 +8,9 @@ This a website that would help people with dyslexia learn spanish.  This is the 
 👀 Blog cards also have hover effects.
 👀 Pseudo-elements added to Email form. 
 
+## 👀 How to view website
 
-
+Follow the link to website on GitHub - https://kerrysteele-jones.github.io/MyWork/submissions/week-2-sub/index.html
 
 
 ## 📁 Folder Structure
@@ -31,15 +32,10 @@ submissions >
                                            wire4.jpg
 
                         
-## 👀 How to view website
-
-Follow the link to website on GitHub - 
 
 ## 👀 How to view wireframe sketches
 
 Wireframe images to see how this all started can be found in the assets > wireframes folder.  There may be somethings that I have changed as I went along. 
-
-
 
 
 ## ✅ Commits to Git 

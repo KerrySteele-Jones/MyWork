@@ -237,7 +237,7 @@ nav a:hover {
 
 
 
-/* Homepage Banner Settings (2 column full width) settings */
+/* Banner Settings (2 column full width) settings (used on homepaged & blog) */
 
 .banner-area {
   height: 100vh;
@@ -619,4 +619,52 @@ textarea::placeholder {
     content: "💬 ";
     margin-right: 0.5rem;
     font-size: 2rem;
+}
+
+/* News/Blog page settings  */
+
+.blog-page .banner-area {
+    background-image: none;
+    height: auto;
+    min-height: unset;
+    padding: 0;
+}
+
+.blog-bill {
+  width: auto;
+  max-height: 40vh;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.blog-bill:hover {
+  transform: scale(.95);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.2));
+}
+
+.blog-layout {
+    display: flex;
+    gap: var(--spacing-lg);
+    max-width: var(--section-max-width-boxed);
+    margin: 0 auto;
+
+}
+.blog-layout article {
+    gap: var(--spacing-xxl);
+}
+
+article h2 {
+    font-size: var(--fs-lg);
+    color: #F1FAEE;
+    background-color: #2A9D8F;
+    padding: 3rem;
+    margin-bottom: var(--spacing-lg);
+
+
+}
+
+.tips-spacing {
+    display: grid;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
