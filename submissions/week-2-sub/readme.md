@@ -5,7 +5,8 @@ This a website that would help people with dyslexia learn spanish.  This is the 
 
 👀 Hero/banner area - button would scroll to the next section, using smooth scrolling - hover over the cat there is a small transition effect. 
 👀 Content area, hover effect also applied on the cat on the left.
-👀 Blog cards also have hover effects
+👀 Blog cards also have hover effects.
+👀 Pseudo-elements added to Email form. 
 
 
 
