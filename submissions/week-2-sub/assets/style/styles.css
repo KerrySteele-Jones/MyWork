@@ -71,6 +71,7 @@
 }
 
     /* html styles */
+
 body {
     background-color: var(--website-color-light-bg);
     color: var(--dark-body-text-color);
@@ -89,6 +90,28 @@ p {
 }
 
     /* Header/nav bar settings */
+
+@media (max-width: 768px) {
+    .header-area {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: center;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+    font-size: var(--fs-base);
+    }
+    
+    .sign-up {
+        display: none;
+
+    }
+}
+
 
 nav a {
   text-decoration: none;
@@ -115,13 +138,6 @@ nav a:hover {
 
 .logo {
     flex: 1;
-
-}
-
-.sign-up {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
 
 }
 
@@ -235,8 +251,6 @@ nav a:hover {
     font-family: var(--font-body);
 }
 
-
-
 /* Banner Settings (2 column full width) settings (used on homepaged & blog) */
 
 .banner-area {
@@ -311,6 +325,8 @@ nav a:hover {
   box-shadow: var(--shadow-light);
   align-self: start;
   text-decoration: none;
+  width: auto;
+
 }
 
 .button-sign-up:hover {
@@ -401,7 +417,6 @@ nav a:hover {
 .content-right p {
   max-width: 35ch; 
 }
-
 
 
 /* Homepage Content Settings for 3 column blog links */
@@ -596,7 +611,7 @@ textarea::placeholder {
 
 .contact-form input,
 .contact-form textarea {
-  color: var(--dark-body-text-color); /* User typed text */
+  color: var(--dark-body-text-color); 
   font-family: var(--font-body);
   font-size: var(--fs-md);
   font-weight: 400;
@@ -624,10 +639,10 @@ textarea::placeholder {
 /* News/Blog page settings  */
 
 .blog-page .banner-area {
-    background-image: none;
-    height: auto;
-    min-height: unset;
-    padding: 0;
+    background-image: none !important;
+    height: auto !important;
+    min-height: unset !important;
+    padding: 0 !important;
 }
 
 .blog-bill {
@@ -667,4 +682,157 @@ article h2 {
     display: grid;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .banner-area {
+    background-image: none !important;
+    padding: var(--spacing-md);
+    text-align: center;
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-right {
+    display: none !important;
+  }
+
+  .banner-left {
+    padding: 0 var(--spacing-sm);
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .banner-left h1,
+  .banner-left h2 {
+    font-size: var(--fs-xl);
+    margin: 0 0 var(--spacing-sm) 0;
+    line-height: 1.2;
+  }
+
+  .banner-left p {
+    margin: var(--spacing-sm) 0;
+    line-height: 1.4;
+    padding: 0;
+    font-size: var(--fs-md);
+  }
+
+  .button-sign-up {
+    margin-top: var(--spacing-md);
+  }
+
+  .banner-left .button-sign-up {
+    align-self: center;  
+    margin: var(--spacing-md) auto 0;
+  }
+
+   .two-column-section {
+    height: auto;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .two-column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+  }
+
+  .content-left, .content-right {
+    width: 100%;
+    text-align: center;
+    position: static; 
+  }
+
+  .content-right h2 {
+    font-size: var(--fs-xl);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+    word-wrap: break-word;
+  }
+
+  .content-right p {
+    font-size: var(--fs-md);
+    margin-bottom: var(--spacing-md);
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+  .content-right .button-sign-up {
+    display: inline-block;
+    margin: var(--spacing-md) auto 0;
+    align-self: center;
+    width: auto;
+    min-width: unset;
+    }
+
+  .button-sign-up {
+    margin-top: var(--spacing-md);
+    position: static;
+    transform: none;
+  }
+
+  .senor-image-two {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-md);
+    margin-top: 100px; 
+  }
+
+  .blog-cards {
+    flex-direction: column;
+    align-items: center;
+ }
+
+.blog-card {
+  width: 100%;
+  max-width: 600px;
+}
+.tips-spacing {
+  padding: var(--spacing-md);
+}
+
+.pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .header-pricing {
+    height: auto;
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .pricing-header h2 {
+    font-size: var(--fs-md);
+    margin-bottom: var(--spacing-lg);
+  }
+   .pricing-card .button-sign-up, .blog-card .button-sign-up, .banner-left .button-sign-up,
+  .content-right .button-sign-up {
+    width: auto;
+    margin: var(--spacing-md) auto 0;
+    display: inline-block;
+    align-self: center;
+    min-width: unset;
+  }
+
 }
