@@ -26,6 +26,9 @@ For this assignment, I tried to replicate what I built in WordPress & Elementor.
 # Week 2 Submission
 📋 Build a Multi-page Responsive Website
 
+👉 GitHub Rep Link:
+https://kerrysteele-jones.github.io/MyWork/submissions/week-2-sub/index.html
+
 For this assignment I created a website that is based on learning spanish.  Later on the course I would like to attempt building an interactive resource that helps me practice Spanish everyday. And a resource that helps dyslexics learn Spanish. 
 
 📋 I have created a seperate read.me file to go with the submission in week-2-sub folder
