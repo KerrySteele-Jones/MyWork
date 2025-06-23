@@ -482,10 +482,9 @@ nav a:hover {
     max-width: var(--section-max-width-boxed);
     margin: 0 auto;
 }
-.pricing-header h1 {
+.pricing-header, .contact-header h1 {
     font-size: var(--fs-xxl);
     color: #E63946;
-
 }
 
 .pricing-header h2 {
@@ -537,3 +536,87 @@ nav a:hover {
   transform: scale(1.02);
 }
 
+/* contact page settings  */
+
+
+.contact-section {
+    text-align: center;
+    padding: var(--spacing-md) var(--section-left-side-padding);
+}
+.contact-container {
+  max-width: var(--section-max-width-boxed);
+  margin: 0 auto;
+}
+
+.contact-container p {
+  font-size: var(--fs-md);
+  color: var(--dark-body-text-color);
+  margin-bottom: var(--spacing-lg);
+  max-width: 45ch;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 800px;
+  margin: 3rem auto;
+  padding-bottom: 10rem;
+}
+
+.contact-form label {
+  text-align: left;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  color: var(--website-color-dark-headings);
+}
+.contact-form input,
+.contact-form {
+  padding: 0.75rem;
+  font-size: var(--fs-sm);
+  border-radius: var(--sup-button-radius);
+  border: none;
+  font-family: var(--font-body);
+  resize: vertical;
+}
+.textarea {
+    border: none;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--light-text-color);
+  font-style: italic;
+  font-size: var(--fs-sm);
+  opacity: 0.7;
+  padding: var(--spacing-md) var(--spacing-md);
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: var(--dark-body-text-color); /* User typed text */
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  font-weight: 400;
+  padding: 0.75rem;
+}
+
+.email-label::before {
+  content: "📧";
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+
+.name-label::before {
+  content: "🧑‍💼 ";  
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+
+.message-label {
+    content: "💬 ";
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
