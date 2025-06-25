@@ -34,7 +34,7 @@
 <section class="banner-area">
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 order-2 order-md-1">
                     <h1>Learn Spanish your Way</h1>
                     <h2>Friendly lessons designed with neurodiverse learners in mind.</h2>
                     <p>Whether you're just starting or brushing up on the basics, our interactive tools, clear visuals, and playful guidance make Spanish learning accessible and enjoyable for everyone.</p>
@@ -42,8 +42,8 @@
                     <h2>Ready to start?</h2>
                     <button type="button" class="btn btn-primary">Find out more</button>
                     </div>
-                <div class="col-6">
-                    <img src="assets/images/senor-bill.png" alt="Cute Spanish Cat" class="senor-bill img-fluid">
+                <div class=" col-12 col-md-6 order-1 order-md-2 text-center">
+                    <img src="assets/images/senor-bill.png" alt="Cute Spanish Cat" class="senor-bill img-fluid width="100%">
                 </div>
             </div>
         </div>
@@ -67,46 +67,57 @@
          </div>
     </section>
 
-    <section class="blog-section">
-        <div class="blog-container">
-            <div class="blog-cards">
-                <article class="blog-card">
-                    <img src="assets/images/bill-blogcard-1.png" alt="Tips for learning Spanish" />
-                    <div class="blog-content">
-                        <h3>Tips for Learning Spanish</h3>
-                        <p>Struggle with memory or focus? Here are our top 5 friendly hacks for dyslexic learners.</p>
-                        <a href="news.html" class="button-sign-up">Read More</a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <img src="assets/images/bill-blogcard-2.png" alt="Spanish for travel" />
-                    <div class="blog-content">
-                    <h3>Spanish for Travel</h3>
-                    <p>Heading abroad? Learn useful words for hotels, menus, and directions in minutes!</p>
-                    <a href="news.html" class="button-sign-up">Read More</a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <img src="assets/images/bill-blogcard-3.png" alt="Word games for learning" />
-                    <div class="blog-content">
-                    <h3>Fun Word Games</h3>
-                    <p>Turn learning into play. Explore three interactive games designed to boost vocab recall.</p>
-                    <a href="news.html" class="button-sign-up">Read More</a>
-                    </div>
-                </article>
+    <section class="blog section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center mb-4 mt-4">
+                    <div class="card img-fluid" style="width: 18rem;">
+                        <img src="assets/images/bill-blogcard-1.png" class="card-img-top" alt="Spanish for travel">
+                        <div class="card-body">
+                            <h5 class="card-title">Tips for Learning Spanish</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                     </div>
+                </div> 
+                <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+                    <div class="card img-fluid" style="width: 18rem;">
+                        <img src="assets/images/bill-blogcard-2.png" class="card-img-top img-fluid" alt="ssets/images/bill-blogcard-2.png"">
+                        <div class="card-body">
+                            <h5 class="card-title">Spanish for Travel</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                     </div>
+                </div> 
+                <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
+                    <div class="card img-fluid" style="width: 18rem;">
+                        <img src="assets/images/bill-blogcard-3.png" class="card-img-top img-fluid" alt="Word games for learning">
+                        <div class="card-body">
+                            <h5 class="card-title">Fun Word Games</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                     </div>
+                </div> 
             </div>
+        </div>
+
+
     </section>
 </main>
    
 <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-one">
-                <h3>Contact Us</h3>
-                <p><strong>Email:</strong> hola@spanishamimanera.com</p>
-                <p><strong>Phone:</strong> +44 1234 567890</p>
-                <p><strong>Address:</strong> 123 Language Lane, Winchester, UK</p>
-            </div>
-            <div class="footer-two">
+        <div class="container">
+            <div class="row align-items-start mt-5">
+                <div class="col-12 col-md-4 mb-4">
+                    <h3>Contact Us</h3>
+                    <p><strong>Email:</strong> hola@spanishamimanera.com</p>
+                    <p><strong>Phone:</strong> +44 1234 567890</p>
+                    <p><strong>Address:</strong> 123 Language Lane, Winchester, UK</p>
+                    </div>
+            
+            <div class="col-12 col-md-4 mb-4">
                  <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -115,15 +126,25 @@
                         <li><a href="news.html">News</a></li>
                     </ul>
             </div>
-            <div class="footer-three">
+            <div class="col-12 col-md-4 mb-4">
                 <h3>Sign-up for our Newletter</h3>
-                <form action="#" method="post" class="newsletter-form">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Joe" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="joe@blogs.com" required>
-                    <button type="submit" class="button-sign-up">Subscribe</button>
-                </form>
+                <form>
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I confirm you give me permission to send me stuff</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+            </div>
             </div>
         </div>
     </footer>
