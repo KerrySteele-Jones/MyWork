@@ -10,8 +10,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
-h2 {
+h2, h3 {
   color: #003eaa !important;
+}
+
+h1 {
+  color: #E63946 !important;
 }
 
 .top-nav {
@@ -29,8 +33,10 @@ h2 {
   background-position: bottom left;
 }
 
-.brand-logo {
-color: #f4a261;
+.navbar-brand {
+color: #103b77 !important;
+font-size: 2rem !important;
+font-weight: bold;
 }
 
 .footer-two ul {
