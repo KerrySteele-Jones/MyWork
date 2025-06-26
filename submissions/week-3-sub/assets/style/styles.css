@@ -52,3 +52,9 @@ color: #f4a261;
 .brand-green {
   color: #2a9d8f;
 }
+.blog-page .banner-area {
+    background-image: none !important;
+    height: auto !important;
+    min-height: unset !important;
+    padding: 0 !important;
+}
