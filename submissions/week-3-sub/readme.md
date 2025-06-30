@@ -10,6 +10,9 @@
 
 Follow the link to website on GitHub - https://kerrysteele-jones.github.io/MyWork/submissions/week-3-sub/index.html
 
+## 👀 How to view GitHub Repo
+
+---> Put link in here kerry, don't forget
 
 ## 📁 Folder Structure
 
